@@ -1,0 +1,95 @@
+<div class="container d-flex">
+    <div class="column-1">
+            <div class="user-content card">
+                    <div class="card-body little-profile text-center">
+                        <div class="pro-img d-flex">
+                            <img src="../../assets/material-pro/assets/images/users/4.jpg" alt="user" />
+                            <div class="user-name">
+                                    <h4 class="m-l-10 m-b-3">Angela Dominic</h4>
+                                    <p class="m-l-10">On travel</p>
+                            </div>
+                            <div class="admit">
+                                <a href="javascript:void(0)" 
+                                class="m-l-20 waves-effect waves-dark btn btn-primary  btn-rounded"> 
+                                    <i class=" ti-star"></i>
+                                </a>
+                                <p class="m-l-20 m-t-5">Admire</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="profile-img-slider">
+                            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+                                <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                                      <img src="{{ slide.img }}" alt="" height="100%">
+                                </div>
+                            </ngx-slick>
+                        </div>
+                        
+                      
+                        <div class="famous-info text-center ">
+                            <div class="item">
+                                <h3 class="m-b-0 font-light">1099</h3><small>Diprie's read</small></div>
+                            <div class="item">
+                                <h3 class="m-b-0 font-light">23,469</h3><small>Commends</small></div>
+                            <div class="item">
+                                <h3 class="m-b-0 font-light">6035</h3><small>Admire</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-map card">
+                        <div class="card-body">
+                            <h4 class="card-title">Traveled Map</h4>
+                        </div>
+                </div>
+    </div>
+    <div class="column-2">
+            <div class="favorite card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fa fa-star orange-cl">
+                            </i> Favorite
+                        </h4>
+                        <div class="favorite-img-slider">
+                                <ngx-slick class="carousel" #slickModal="slick-modal" [config]="bigSlideConfig" (afterChange)="afterChange($event)">
+                                    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                                          <img src="{{ slide.img }}" alt="" height="100%">
+                                    </div>
+                                </ngx-slick>
+                            </div>
+                    </div>
+            </div>
+            <div class="d-flex memo-container">
+                <div class="memo card">
+                        <div class="card-body">
+                            <h4 class="card-title">Diary</h4>
+                        </div>
+                </div>
+                <div class="memo card">
+                        <div class="card-body">
+                            <h4 class="card-title">Journeys</h4>
+                        </div>
+                </div>
+                <div class="memo card">
+                        <div class="card-body">
+                            <h4 class="card-title">Wish list</h4>
+                        </div>
+                </div>
+                <div class="memo card">
+                        <div class="card-body">
+                            <h4 class="card-title">Group</h4>
+                        </div>
+                </div>
+                
+            </div>
+    </div>
+    <div class="column-3">
+            <div class="card">
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+    </div>
+
+   
+</div>

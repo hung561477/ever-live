@@ -1,0 +1,75 @@
+.user-content {
+    width: 330px;
+    height: 270px;
+}
+.card-body {
+    padding: 12px; 
+}
+.travel-map {
+    width: 330px;
+    height: 290px;
+}
+.little-profile .pro-img {
+    margin: 0;
+    text-align: left;
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 2px;
+    }
+    .user-name {
+        p {
+            font-size: 12px;
+            cursor: pointer;
+        }
+    }
+    .admit {
+        text-align: center;
+       a {
+        border-radius: 5px;  
+       }
+       p {
+        font-size: 12px;
+        cursor: pointer;
+        }
+    }
+  
+}
+.famous-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    .item  {
+        width: 100px;
+    }
+}
+
+.profile-img-slider {
+    width: 100%;
+    margin: 20px auto;
+    .carousel {
+        .slide {
+            height: 60px;
+            padding: 0 2px;
+        }
+    }
+}
+.column-2 {
+    margin-left: 15px;
+    width: 730px;
+    .favorite {
+        width: 730px;
+        height: 214px;
+    }
+    .memo-container {
+        justify-content: space-between;
+        flex-flow: row wrap;
+        .memo {
+            width: 360px;
+            height: 308px;
+        }
+    }
+}
+
